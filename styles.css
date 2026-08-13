@@ -138,10 +138,14 @@ h1 .accent{
   background:rgba(255,255,255,0.02);
   border-bottom:1px solid rgba(134,168,207,0.14);
 }
-.terminal-bar span{width:11px;height:11px;border-radius:50%;}
+.terminal-bar span.tb-1,
+.terminal-bar span.tb-2,
+.terminal-bar span.tb-3{width:11px;height:11px;border-radius:50%; flex-shrink:0;}
 .tb-1{background:#e1636b;} .tb-2{background:#e0b45a;} .tb-3{background:#6fbf7a;}
 .terminal-bar .tb-title{
   margin-left:8px; font-family:var(--mono); font-size:12px; color:var(--text-low);
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+  min-width:0; width:auto; flex:1 1 auto;
 }
 .terminal-body{
   padding:22px 20px 26px; font-family:var(--mono); font-size:13.5px; line-height:1.9;
