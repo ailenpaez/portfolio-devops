@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ailén Páez — DevOps Learner</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.17.0/devicon.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand"><span class="dot"></span>ailenpaez.dev<small>~/devops</small></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+    <nav class="links" id="navLinks">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#skills">Skills</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- HERO -->
+  <section class="hero" id="sobre-mi">
+    <div>
+      <div class="eyebrow">Sobre mí</div>
+      <h1>Hola, soy Ailén.<br>QA en proceso de deployment <span class="accent"> hacia DevOps</span>.</h1>
+      <p class="lead">
+        Estudiante de Desarrollo de Software y QA Manual. Vengo del testing y del backend,
+        y ahora estoy sumando la cultura DevOps a mi camino: automatizar, integrar y desplegar
+        con las mismas ganas con las que hoy reporto bugs y escribo casos de prueba.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#skills">Ver mis skills</a>
+        <a class="btn btn-ghost" href="https://github.com/ailenpaez/" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+
+    <div class="terminal">
+      <div class="terminal-bar">
+        <span class="tb-1"></span><span class="tb-2"></span><span class="tb-3"></span>
+        <span class="tb-title">ailen@devops-journey</span>
+      </div>
+      <div class="terminal-body" id="typedTerminal"></div>
+    </div>
+  </section>
+
+  <hr class="div">
+
+  <!-- SKILLS QUE YA TENGO -->
+  <section id="skills">
+    <div class="section-head">
+      <div class="eyebrow">Skills</div>
+      <h2>Lo que ya sé hacer</h2>
+      <p>Backend, QA y las herramientas con las que trabajo todos los días.</p>
+    </div>
+
+    <div class="skill-groups">
+      <div class="skill-card">
+        <h3>Lenguajes</h3>
+        <ul class="skill-list">
+          <li><i class="devicon-python-plain colored"></i>Python</li>
+          <li><i class="devicon-javascript-plain colored"></i>JavaScript</li>
+          <li><i class="devicon-typescript-plain colored"></i>TypeScript</li>
+          <li><i class="devicon-csharp-plain colored"></i>C#</li>
+          <li><i class="bi bi-filetype-sql"></i>SQL</li>
+          <li><i class="devicon-cobol-original colored"></i>COBOL</li>
+          <li><i class="bi bi-terminal"></i>JCL</li>
+          <li><i class="bi bi-hdd-rack"></i>Mainframe</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Frameworks</h3>
+        <ul class="skill-list">
+          <li><i class="devicon-nodejs-plain colored"></i>Node.js</li>
+          <li><i class="devicon-express-original colored"></i>Express</li>
+          <li><i class="devicon-django-plain colored"></i>Django</li>
+          <li><i class="devicon-dotnetcore-plain colored"></i>ASP.NET</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Herramientas</h3>
+        <ul class="skill-list">
+          <li><i class="devicon-git-plain colored"></i>Git</li>
+          <li><i class="devicon-github-original colored"></i>GitHub</li>
+          <li><i class="devicon-postman-plain colored"></i>Postman</li>
+          <li><i class="bi bi-bar-chart-line"></i>Power BI</li>
+          <li><i class="devicon-notion-plain colored"></i>Notion</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>QA</h3>
+        <ul class="skill-list">
+          <li><i class="bi bi-clipboard-check"></i>Testing manual</li>
+          <li><i class="bi bi-list-check"></i>Casos de prueba</li>
+          <li><i class="bi bi-bug"></i>Reporte de bugs</li>
+          <li><i class="bi bi-check2-square"></i>Pruebas funcionales</li>
+          <li><i class="bi bi-arrow-repeat"></i>Pruebas de regresión</li>
+          <li><i class="bi bi-diagram-2"></i>Ciclo de vida del bug</li>
+          <li><i class="devicon-selenium-original colored"></i>Selenium</li>
+        </ul>
+      </div>
+      <div class="skill-card" style="grid-column:1/-1;">
+        <h3>Backend</h3>
+        <ul class="skill-list skill-list-wide">
+          <li><i class="bi bi-hdd-network"></i>API REST</li>
+          <li><i class="bi bi-database"></i>Bases de datos relacionales</li>
+          <li><i class="devicon-git-plain colored"></i>Control de versiones</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS QUE VOY A APRENDER -->
+  <section>
+    <div class="section-head">
+      <div class="eyebrow">Roadmap</div>
+      <h2>Lo que estoy aprendiendo</h2>
+      <p>Mi ruta hacia DevOps, de la base a la infraestructura como código.</p>
+    </div>
+
+    <div class="learn-grid">
+      <div class="learn-card">
+        <i class="devicon-linux-plain colored learn-icon"></i>
+        <span class="num">01</span>
+        <span class="name">Linux</span>
+        <span class="status">Por aprender</span>
+      </div>
+      <div class="learn-card">
+        <i class="devicon-docker-plain colored learn-icon"></i>
+        <span class="num">02</span>
+        <span class="name">Docker</span>
+        <span class="status">Por aprender</span>
+      </div>
+      <div class="learn-card">
+        <i class="devicon-githubactions-plain colored learn-icon"></i>
+        <span class="num">03</span>
+        <span class="name">CI/CD</span>
+        <span class="status">Por aprender</span>
+      </div>
+      <div class="learn-card">
+        <i class="devicon-kubernetes-plain colored learn-icon"></i>
+        <span class="num">04</span>
+        <span class="name">Kubernetes</span>
+        <span class="status">Por aprender</span>
+      </div>
+      <div class="learn-card">
+        <i class="devicon-terraform-plain colored learn-icon"></i>
+        <span class="num">05</span>
+        <span class="name">Terraform</span>
+        <span class="status">Por aprender</span>
+      </div>
+    </div>
+  </section>
+
+  <hr class="div">
+
+  <!-- PROYECTOS -->
+  <section id="proyectos">
+    <div class="section-head">
+      <div class="eyebrow">Proyectos</div>
+      <h2>Todavía no hay nada acá</h2>
+      <p>A medida que avance en Linux, Docker y CI/CD voy a ir subiendo proyectos reales. Por ahora, estos son los espacios reservados.</p>
+    </div>
+
+    <div class="project-grid">
+      <div class="project-card">
+        <div class="ph-icon"><i class="bi bi-question-lg"></i></div>
+        <div>
+          <div class="ph-title">Proyecto 1</div>
+          <div class="ph-sub">// pendiente de definir</div>
+        </div>
+        <span class="ph-tag">Próximamente</span>
+      </div>
+      <div class="project-card">
+        <div class="ph-icon"><i class="bi bi-question-lg"></i></div>
+        <div>
+          <div class="ph-title">Proyecto 2</div>
+          <div class="ph-sub">// pendiente de definir</div>
+        </div>
+        <span class="ph-tag">Próximamente</span>
+      </div>
+      <div class="project-card">
+        <div class="ph-icon"><i class="bi bi-question-lg"></i></div>
+        <div>
+          <div class="ph-title">Proyecto 3</div>
+          <div class="ph-sub">// pendiente de definir</div>
+        </div>
+        <span class="ph-tag">Próximamente</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contacto">
+  <div class="wrap footer-row">
+    <div class="footer-brand">© 2026 Ailén Páez — construyendo hacia DevOps, un commit a la vez.</div>
+    <div class="footer-links">
+      <a href="https://github.com/ailenpaez/" target="_blank" rel="noopener">
+        <i class="bi bi-github"></i>github.com/ailenpaez
+      </a>
+      <a href="https://www.linkedin.com/in/paezailenj/" target="_blank" rel="noopener">
+        <i class="bi bi-linkedin"></i>linkedin.com/in/paezailenj
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile nav toggle
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+  // Typed terminal effect
+  const lines = [
+    { html: '<span class="prompt">$</span> <span class="cmd">whoami</span>' },
+    { html: 'ailen páez — estudiante de software · qa manual' },
+    { html: '' },
+    { html: '<span class="prompt">$</span> <span class="cmd">cat</span> roadmap.yaml' },
+    { html: '<span class="key">learning:</span> [<span class="str">linux</span>, <span class="str">docker</span>, <span class="str">ci-cd</span>, <span class="str">k8s</span>, <span class="str">terraform</span>]' },
+    { html: '<span class="key">status:</span> <span class="str">"en progreso"</span>' },
+    { html: '<span class="key">goal:</span> <span class="str">"backend + devops junior"</span>' },
+  ];
+
+  const container = document.getElementById('typedTerminal');
+  let li = 0, ci = 0;
+
+  function typeNext() {
+    if (li >= lines.length) {
+      const cur = document.createElement('div');
+      cur.innerHTML = '<span class="prompt">$</span> <span class="cursor"></span>';
+      container.appendChild(cur);
+      return;
+    }
+    const full = lines[li].html;
+    if (ci === 0) {
+      const row = document.createElement('div');
+      row.className = 'term-line';
+      row.id = 'line-' + li;
+      container.appendChild(row);
+    }
+    const row = document.getElementById('line-' + li);
+    if (full.indexOf('<') !== -1) {
+      row.innerHTML = full;
+      li++; ci = 0;
+      setTimeout(typeNext, 260);
+    } else {
+      row.textContent = full.slice(0, ci + 1);
+      ci++;
+      if (ci >= full.length) { li++; ci = 0; setTimeout(typeNext, 200); }
+      else setTimeout(typeNext, 22);
+    }
+  }
+  typeNext();
+</script>
+
+</body>
+</html>
